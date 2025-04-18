@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "BGA96C80P9X16_800X1400X120"
+		(property "Footprint" "!Mem:BGA96C80P9X16_800X1400X120"
 			(at 31.75 -94.92 0)
 			(effects
 				(font
@@ -53,73 +53,21 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "1.2"
-			(at 31.75 -394.92 0)
+		(property "LCSC Part #" "C36513"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Micron"
-			(at 31.75 -494.92 0)
+		(property "Digi-Key Part Number" "MT41K128M16JT-125:K"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MT41K128M16JT-125:K"
-			(at 31.75 -594.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "340-135795-TRAY"
-			(at 31.75 -694.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micron/MT41K128M16JT-125K?qs=rrS6PyfT74fXNZ%252B5rdA1ug%3D%3D"
-			(at 31.75 -794.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "MT41K128M16JT-125:K"
-			(at 31.75 -894.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/mt41k128m16jt-125k/micron-technology?utm_currency=USD&region=europe"
-			(at 31.75 -994.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 				(hide yes)
 			)
 		)
