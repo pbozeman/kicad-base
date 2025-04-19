@@ -894,7 +894,7 @@
 		(uuid "fb100ce2-82ea-474e-88de-0cc044a6b075")
 	)
 	(embedded_fonts no)
-	(model "/Users/pbozeman/src/artix-unplugged/pcb/kicad-base/lib/misc/misc.pretty/DF40C-100DS-0.4V_51.stp"
+	(model "${KIPRJMOD}/../kicad-base/lib/misc/misc.pretty/DF40C-100DS-0.4V_51.stp"
 		(offset
 			(xyz 0 0 0)
 		)

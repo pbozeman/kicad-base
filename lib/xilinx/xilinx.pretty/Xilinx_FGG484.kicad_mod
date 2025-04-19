@@ -3595,7 +3595,7 @@
 		(uuid "2175f131-a2b4-462e-ae11-ab533fc11d14")
 	)
 	(embedded_fonts no)
-	(model "/Users/pbozeman/src/artix-unplugged/pcb/kicad-base/lib/xilinx/xilinx.pretty/FG_G_484_ARTIX-7_XIL.stp"
+	(model "${KIPRJMOD}/../kicad-base/lib/xilinx/xilinx.pretty/FG_G_484_ARTIX-7_XIL.stp"
 		(offset
 			(xyz 0 0 -0.5)
 		)

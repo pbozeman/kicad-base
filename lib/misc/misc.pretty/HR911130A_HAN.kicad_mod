@@ -381,7 +381,7 @@
 		(uuid "9f2c3fc6-fe6e-4056-8d01-de0e840812d8")
 	)
 	(embedded_fonts no)
-	(model "/Users/pbozeman/src/artix-unplugged/pcb/kicad-base/lib/misc/misc.pretty/HR911130A-269445.stp"
+	(model "${KIPRJMOD}/../kicad-base/lib/misc/misc.pretty/HR911130A-269445.stp"
 		(offset
 			(xyz 5.75 -8.75 -0.5)
 		)
