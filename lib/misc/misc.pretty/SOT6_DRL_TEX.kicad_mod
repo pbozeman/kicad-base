@@ -315,4 +315,15 @@
 		(uuid "df340330-db96-443e-824b-0287379892ca")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../kicad-base/lib/misc/misc.pretty/SOT6_DRL_TEX.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

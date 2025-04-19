@@ -2772,7 +2772,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-64-1EP_9x9mm_P0.5mm_EP4.35x4.35mm"
+		(property "Footprint" "!Misc:FT2232HQ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2791,6 +2791,24 @@
 			)
 		)
 		(property "Description" "Hi Speed Double Channel USB UART/FIFO, QFN-64"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C193662 "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" "768-1025-1-ND"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2819,8 +2837,8 @@
 		)
 		(symbol "FT2232HQ_0_1"
 			(rectangle
-				(start -26.67 -52.07)
-				(end 26.67 52.07)
+				(start -26.67 52.07)
+				(end 26.67 -52.07)
 				(stroke
 					(width 0.254)
 					(type default)
