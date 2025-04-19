@@ -781,4 +781,15 @@
 		(uuid "fb6a58e4-6e17-4084-b7d6-bfccd44852f8")
 	)
 	(embedded_fonts no)
+	(model "/Users/pbozeman/src/artix-unplugged/pcb/kicad-base/lib/mem/mem.pretty/MT41K128M16JT-125_K.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

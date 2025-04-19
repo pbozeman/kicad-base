@@ -698,7 +698,7 @@
 		(uuid "0f9e8e8d-fcfa-4053-a0a1-d9eb2b249d15")
 	)
 	(embedded_fonts no)
-	(model "/Users/pbozeman/src/artix-unplugged/pcb/kicad-base/lib/misc/misc.pretty/QFN_32HQ-REEL_FTD.step"
+	(model "${KIPRJMOD}/../kicad-base/lib/misc/misc.pretty/QFN_32HQ-REEL_FTD.step"
 		(offset
 			(xyz 0 0 0)
 		)
