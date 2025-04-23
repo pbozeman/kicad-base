@@ -5069,7 +5069,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "!Misc:L10_3x3_MFG"
+		(property "Footprint" "!Misc:DFN10_3X3_INR"
 			(at 0 0 0)
 			(effects
 				(font
