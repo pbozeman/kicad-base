@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://media-www.micron.com/-/media/client/global/documents/products/data-sheet/dram/ddr3/2gb_1_35v_ddr3l.pdf?rev=4f46f8613ff2467c9f3428e9043d0098"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588886760974008320"
 			(at 31.75 -194.92 0)
 			(effects
 				(font
