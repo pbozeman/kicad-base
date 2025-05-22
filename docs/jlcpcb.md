@@ -26,7 +26,7 @@
     * F/B: 6.16mil
     * In2: (In3.cu): 5.61mil
   * Non-coplanar Diff Pair 90 (usb):
-    * F/B: 6.23mil width, 8mil spacing
+    * F/B: 6.23mil width, 8 mil spacing
     * In2: 5.66mil width, 8 mil spacing
   * Non-coplanar Diff Pair 100ohm:
     * F/B: 4.88mil width, 8mil spacing
@@ -53,8 +53,8 @@
     * F/B: 7.15mil width, 8mil spacing
     * In2/In4: 7.07mil width, 8 mil spacing
   * Non-coplanar Diff Pair 100ohm:
-    * F/B: 5.6mil width, 8mil spacing
-    * In2/In4: 5.55mil width, 8 mil spacing
+    * F/B: 4.28mil width, 5mil spacing
+    * In2/In4: 4.33mil width, 5 mil spacing
   
 ## PCB manufacturing checklist
 
