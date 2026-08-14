@@ -29,15 +29,32 @@ than trusting these blindly.
 - JLC06161H-3313 stackup is the cheapest impedance-controlled option — no
   additional cost
   - See: <https://jlcpcb.com/pcb-impedance-calculator>
+  - Physical stackup (per <https://jlcpcb.com/impedance>, total 1.6mm):
+
+    | Layer        | Material       | Thickness | Er   |
+    | ------------ | -------------- | --------- | ---- |
+    | F.Cu         | copper (1oz)   | 0.035mm   |      |
+    | dielectric 1 | prepreg 3313   | 0.0994mm  | 4.1  |
+    | In1.Cu       | copper (0.5oz) | 0.0152mm  |      |
+    | dielectric 2 | core           | 0.55mm    | 4.6  |
+    | In2.Cu       | copper (0.5oz) | 0.0152mm  |      |
+    | dielectric 3 | prepreg 2116   | 0.1088mm  | 4.16 |
+    | In3.Cu       | copper (0.5oz) | 0.0152mm  |      |
+    | dielectric 4 | core           | 0.55mm    | 4.6  |
+    | In4.Cu       | copper (0.5oz) | 0.0152mm  |      |
+    | dielectric 5 | prepreg 3313   | 0.0994mm  | 4.1  |
+    | B.Cu         | copper (1oz)   | 0.035mm   |      |
+
+  - Impedance widths (calculator output, 2026-08):
   - Single ended non-coplanar 50ohm:
-    - F/B: 6.16mil
-    - In2 (In3.cu): 5.61mil
+    - F/B: 5.94mil
+    - In2 (In3.cu): 5.59mil
   - Non-coplanar Diff Pair 90 (usb):
-    - F/B: 6.23mil width, 8 mil spacing
-    - In2: 5.66mil width, 8 mil spacing
+    - F/B: 6.05mil width, 8 mil spacing
+    - In2: 5.59mil width, 8 mil spacing
   - Non-coplanar Diff Pair 100ohm:
-    - F/B: 4.88mil width, 8mil spacing
-    - In2: 4.4mil width, 8 mil spacing
+    - F/B: 4.69mil width, 8mil spacing
+    - In2: 4.33mil width, 8 mil spacing
 
 ### 8 Layer
 
@@ -56,6 +73,30 @@ Note: In2 is power to increase the capacitance between it and Gnd1/In1.
 - Signal layer notes are the same.
 
 - JLC08161H-3313 stackup:
+  - Physical stackup (per <https://jlcpcb.com/impedance>, total 1.6mm; the
+    3x 2116 prepreg groups press into one dielectric layer each, 0.3568mm
+    total = 0.1164 + 0.1240 + 0.1164):
+
+    | Layer        | Material          | Thickness | Er   |
+    | ------------ | ----------------- | --------- | ---- |
+    | F.Cu         | copper (1oz)      | 0.035mm   |      |
+    | dielectric 1 | prepreg 3313      | 0.0994mm  | 4.1  |
+    | In1.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 2 | core              | 0.1mm     | 4.6  |
+    | In2.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 3 | prepreg 2116 (x3) | 0.3568mm  | 4.16 |
+    | In3.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 4 | core              | 0.3mm     | 4.6  |
+    | In4.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 5 | prepreg 2116 (x3) | 0.3568mm  | 4.16 |
+    | In5.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 6 | core              | 0.1mm     | 4.6  |
+    | In6.Cu       | copper (0.5oz)    | 0.0152mm  |      |
+    | dielectric 7 | prepreg 3313      | 0.0994mm  | 4.1  |
+    | B.Cu         | copper (1oz)      | 0.035mm   |      |
+
+  - Impedance widths (recorded 2025 — stale calculator data, re-run
+    before use):
   - Single ended non-coplanar 50ohm:
     - F/B: 7.33mil
     - In3/In5: 6.97mil

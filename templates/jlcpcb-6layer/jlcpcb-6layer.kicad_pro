@@ -78,22 +78,22 @@
         {
           "gap": 0.2032,
           "via_gap": 0.0,
-          "width": 0.11176
+          "width": 0.109982
         },
         {
           "gap": 0.2032,
           "via_gap": 0.0,
-          "width": 0.123952
+          "width": 0.119126
         },
         {
           "gap": 0.2032,
           "via_gap": 0.0,
-          "width": 0.143764
+          "width": 0.141986
         },
         {
           "gap": 0.2032,
           "via_gap": 0.0,
-          "width": 0.158242
+          "width": 0.15367
         }
       ],
       "drc_exclusions": [],
@@ -233,8 +233,8 @@
         0.0,
         0.0762,
         0.09,
-        0.142494,
-        0.156464
+        0.141986,
+        0.150876
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -548,7 +548,7 @@
         "clearance": 0.254,
         "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.123952,
+        "diff_pair_width": 0.119126,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -556,7 +556,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.156464,
+        "track_width": 0.150876,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
