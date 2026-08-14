@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "#cap")(type "KiCad")(uri "${KIPRJMOD}/base/lib/cap.kicad_sym")(options "")(descr "kicad-parts cap"))
+	(lib (name "#ind")(type "KiCad")(uri "${KIPRJMOD}/base/lib/ind.kicad_sym")(options "")(descr "kicad-parts ind"))
+	(lib (name "#res")(type "KiCad")(uri "${KIPRJMOD}/base/lib/res.kicad_sym")(options "")(descr "kicad-parts res"))
+)
