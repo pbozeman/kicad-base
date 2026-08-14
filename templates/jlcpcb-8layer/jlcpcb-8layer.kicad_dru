@@ -20,3 +20,10 @@
 (rule "clearance - bga fanout"
 	(condition "A.intersectsArea('bga')")
 	(constraint clearance (min 0.09mm)))
+
+# Ground pour this close to an impedance-controlled trace shifts its
+# impedance (coplanar effect); >= 3x the dielectric height keeps the
+# non-coplanar calculator numbers valid on every layer of these stackups.
+(rule "pour standoff - impedance netclasses"
+	(condition "A.Type == 'Zone' && (B.NetClass == '50ohm' || B.NetClass == '90ohm' || B.NetClass == '100ohm')")
+	(constraint clearance (min 0.5mm)))
