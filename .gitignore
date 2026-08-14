@@ -3,3 +3,16 @@
 .direnv
 .history
 tmp
+
+# kicad temp/state files
+*-backups
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.lck
+*.sch-bak
+*auto_saved_files*
+*~
+_autosave-*
+fp-info-cache
