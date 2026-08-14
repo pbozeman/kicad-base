@@ -59,16 +59,26 @@ than trusting these blindly.
 ### 8 Layer
 
 - Stackup:
-  - Sig1 (F.cu)
-  - Gnd (In1.cu)
-  - Pwr (In2.cu)
-  - Sig2 (In3.cu)
-  - Gnd (In4.cu)
-  - Sig3 (In5.cu)
-  - Gnd (In6.cu)
-  - Sig4 (B.Cu)
+  - Sig1 (F.cu / L1)
+  - Gnd (In1.cu / L2)
+  - Sig2 (In2.cu / L3)
+  - Pwr (In3.cu / L4)
+  - Gnd (In4.cu / L5)
+  - Sig3 (In5.cu / L6)
+  - Gnd (In6.cu / L7)
+  - Sig4 (B.Cu / L8)
 
-Note: In2 is power to increase the capacitance between it and Gnd1/In1.
+- Why these layers: the JLC08161H-3313 dielectrics are not uniform — thin
+  0.1mm cores sit at L2–L3 and L6–L7, while L4/L5 are surrounded by the
+  0.3mm center core and 0.3568mm prepreg groups. Inner signals go on L3
+  and L6, each tight against a ground plane across a 0.1mm core
+  (50ohm ≈ 4.75mil). L4 is far from every plane (50ohm there would need
+  ≈11.5mil traces), so it takes power, where plane distance doesn't
+  matter. The cost: the Pwr(L4)–Gnd(L5) pair spans the 0.3mm core, so
+  inter-plane capacitance is modest — lean on decoupling caps, not plane
+  capacitance. (An earlier revision put Pwr on In2/L3 next to gnd for
+  plane capacitance; that reflected an older stackup vintage and would
+  waste the best inner signal layer on this one.)
 
 - Signal layer notes are the same.
 
@@ -95,17 +105,17 @@ Note: In2 is power to increase the capacitance between it and Gnd1/In1.
     | dielectric 7 | prepreg 3313      | 0.0994mm  | 4.1  |
     | B.Cu         | copper (1oz)      | 0.035mm   |      |
 
-  - Impedance widths (recorded 2025 — stale calculator data, re-run
-    before use):
+  - Impedance widths (calculator output, 2026-08; inner = In2/In5.cu,
+    i.e. L3/L6, which solve identically):
   - Single ended non-coplanar 50ohm:
-    - F/B: 7.33mil
-    - In3/In5: 6.97mil
+    - F/B: 5.94mil
+    - Inner: 4.75mil
   - Non-coplanar Diff Pair 90 (usb):
-    - F/B: 7.15mil width, 8mil spacing
-    - In3/In5: 7.07mil width, 8 mil spacing
+    - F/B: 6.05mil width, 8 mil spacing
+    - Inner: 5.10mil width, 8 mil spacing
   - Non-coplanar Diff Pair 100ohm:
-    - F/B: 4.28mil width, 5mil spacing
-    - In3/In5: 4.33mil width, 5 mil spacing
+    - F/B: 4.69mil width, 8mil spacing
+    - Inner: 4.05mil width, 8 mil spacing
 
 ## PCB manufacturing checklist
 

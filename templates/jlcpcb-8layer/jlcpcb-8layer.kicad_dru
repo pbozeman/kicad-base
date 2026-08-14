@@ -1,0 +1,22 @@
+(version 1)
+
+# JLCPCB multilayer floors (see kicad-base docs/jlcpcb.md). The board-setup
+# constraints in the .kicad_pro hold the fab's absolute minimums (3mil track,
+# 0.09mm clearance) since custom rules can never relax those; these rules
+# raise the working floor, then relax it back to the fab floor only inside
+# rule areas named "bga" (draw a rule area over each BGA and set its Name).
+
+(rule "track width - general"
+	(constraint track_width (min 0.09mm)))
+
+(rule "clearance - general"
+	(constraint clearance (min 0.1mm)))
+
+# Later rules win: BGA fan-out areas may use the fab minimums.
+(rule "track width - bga fanout"
+	(condition "A.intersectsArea('bga')")
+	(constraint track_width (min 0.0762mm)))
+
+(rule "clearance - bga fanout"
+	(condition "A.intersectsArea('bga')")
+	(constraint clearance (min 0.09mm)))
