@@ -1,0 +1,5 @@
+# misc state files and tmps
+.DS_Store
+.claude/settings.local.json
+.direnv
+tmp

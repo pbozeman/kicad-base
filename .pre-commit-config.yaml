@@ -1,0 +1,61 @@
+default_install_hook_types: [pre-commit, pre-push]
+
+# Stop the whole run at the first failing hook. A formatter that rewrites a file
+# -- or any lint/style gate that fails -- means the tree is about to change, so
+# the cached results of every later hook would be stale. Aborting now avoids
+# running them against a doomed tree.
+fail_fast: true
+
+# Published artifacts (lib/ and sym-lib-table, copied in by kicad-parts'
+# `just publish`) are never held to file hooks.
+exclude: ^(lib/|sym-lib-table$)
+
+repos:
+  # General file hygiene checks from pre-commit-hooks.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+        args: ["--maxkb=5120"]
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+
+  # Local hooks run from the flake/dev-shell toolchain.
+  - repo: local
+    hooks:
+      - id: nixfmt
+        name: nixfmt
+        entry: nixfmt
+        language: system
+        files: \.nix$
+      - id: yamlfmt
+        name: yamlfmt
+        entry: yamlfmt
+        language: system
+        types: [yaml]
+      - id: prettier
+        name: prettier
+        entry: prettier --write
+        language: system
+        types: [markdown]
+      - id: shfmt
+        name: shfmt
+        entry: shfmt -w -i 2 -ci
+        language: system
+        types: [shell]
+      - id: shellcheck
+        name: shellcheck
+        entry: shellcheck
+        language: system
+        types: [shell]
+        exclude: (^|/)\.envrc$
+      - id: gitleaks
+        name: gitleaks
+        entry: gitleaks git --pre-commit --staged --redact --no-banner --no-color
+        language: system
+        pass_filenames: false
+        always_run: true
