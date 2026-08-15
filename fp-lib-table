@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "xilinx")(type "KiCad")(uri "${KIPRJMOD}/base/footprints/xilinx.pretty")(options "")(descr "kicad-parts xilinx"))
+)
