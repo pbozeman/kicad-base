@@ -1,0 +1,4 @@
+# Shared recipes (check, sync, new-board, ...) come from kicad-base.
+# Add project-specific recipes below the import.
+
+import 'kicad-base/just/project.just'

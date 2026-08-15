@@ -16,6 +16,8 @@ jobs:
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: check
         run: |
-          nix develop -c just check --show-diff-on-failure
+          nix develop ./kicad-base -c just check --show-diff-on-failure
