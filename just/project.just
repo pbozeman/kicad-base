@@ -40,6 +40,9 @@ sync:
   done
   for d in $({{ _find_boards }}); do
     cp kicad-base/sym-lib-table "$d/sym-lib-table"
+    if [ -f kicad-base/fp-lib-table ]; then
+      cp kicad-base/fp-lib-table "$d/fp-lib-table"
+    fi
   done
 
 # Fail if any managed file has drifted from the pinned kicad-base/ revision.
@@ -54,6 +57,10 @@ check-drift:
   for d in $({{ _find_boards }}); do
     diff -q kicad-base/sym-lib-table "$d/sym-lib-table" >/dev/null 2>&1 \
       || { echo "stale: $d/sym-lib-table (run 'just sync')"; fail=1; }
+    if [ -f kicad-base/fp-lib-table ]; then
+      diff -q kicad-base/fp-lib-table "$d/fp-lib-table" >/dev/null 2>&1 \
+        || { echo "stale: $d/fp-lib-table (run 'just sync')"; fail=1; }
+    fi
     [ "$(realpath -m "$d/base" 2>/dev/null || true)" = "$(realpath ./kicad-base)" ] \
       || { echo "bad or missing symlink: $d/base (should resolve to ./kicad-base)"; fail=1; }
   done
@@ -98,4 +105,7 @@ new-board name="" stackup="jlcpcb-6layer":
     sed "s/$stackup/$board/g" "$f" >"$dir/$board.$ext"
   done
   cp kicad-base/sym-lib-table "$dir/sym-lib-table"
+  if [ -f kicad-base/fp-lib-table ]; then
+    cp kicad-base/fp-lib-table "$dir/fp-lib-table"
+  fi
   echo "created $dir/$board ($stackup)"

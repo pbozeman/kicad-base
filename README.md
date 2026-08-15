@@ -12,6 +12,9 @@ project dotfiles.
 
 - `lib/`, `sym-lib-table` — shared symbol libraries and the canonical per-board
   lib table (published in from kicad-parts)
+- `footprints/`, `fp-lib-table` — shared footprint libs (local forks, e.g.
+  pad-to-die tuned BGAs) and their canonical per-board table (published in
+  from kicad-parts)
 - `docs/` — fab notes (JLCPCB stackups, impedance, etc.)
 - `templates/` — board stackup templates (`jlcpcb-6layer`, `jlcpcb-8layer`)
 - `template/root/` — project skeleton, copied into new projects by `setup` and
@@ -65,7 +68,8 @@ From the project root (imported from `kicad-base/just/project.just`):
 - `just new-board [name] [stackup]` — add a board
 
 Managed files (`.gitignore`, `.pre-commit-config.yaml`, the `ci` workflow, and
-each board's `sym-lib-table`) are verbatim copies owned by kicad-base — don't
+each board's `sym-lib-table` and `fp-lib-table`) are verbatim copies owned by
+kicad-base — don't
 edit them in a project; change them here and `sync`. The project's `Justfile`
 is seeded once and then owned by the project, as is any additional workflow
 file beside the managed `ci.yml`.

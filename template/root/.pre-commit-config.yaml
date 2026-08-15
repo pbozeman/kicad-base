@@ -6,9 +6,9 @@ default_install_hook_types: [pre-commit, pre-push]
 # running them against a doomed tree.
 fail_fast: true
 
-# Board sym-lib-tables are verbatim copies managed by `just sync` from
-# kicad-base/ and are never held to file hooks.
-exclude: (^|/)sym-lib-table$
+# Board sym-lib-tables and fp-lib-tables are verbatim copies managed by
+# `just sync` from kicad-base/ and are never held to file hooks.
+exclude: (^|/)(sym|fp)-lib-table$
 
 repos:
   # General file hygiene checks from pre-commit-hooks.

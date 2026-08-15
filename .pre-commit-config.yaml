@@ -6,9 +6,9 @@ default_install_hook_types: [pre-commit, pre-push]
 # running them against a doomed tree.
 fail_fast: true
 
-# Published artifacts (lib/ and sym-lib-table, copied in by kicad-parts'
-# `just publish`) are never held to file hooks.
-exclude: ^(lib/|sym-lib-table$)
+# Published artifacts (lib/, footprints/, and the lib tables, copied in by
+# kicad-parts' `just publish`) are never held to file hooks.
+exclude: ^(lib/|footprints/|sym-lib-table$|fp-lib-table$)
 
 repos:
   # General file hygiene checks from pre-commit-hooks.
