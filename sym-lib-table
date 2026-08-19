@@ -5,6 +5,7 @@
 	(lib (name "#cpd")(type "KiCad")(uri "${KIPRJMOD}/base/lib/cpd.kicad_sym")(options "")(descr "kicad-parts cpd"))
 	(lib (name "#fpga")(type "KiCad")(uri "${KIPRJMOD}/base/lib/fpga.kicad_sym")(options "")(descr "kicad-parts fpga"))
 	(lib (name "#ind")(type "KiCad")(uri "${KIPRJMOD}/base/lib/ind.kicad_sym")(options "")(descr "kicad-parts ind"))
+	(lib (name "#osc")(type "KiCad")(uri "${KIPRJMOD}/base/lib/osc.kicad_sym")(options "")(descr "kicad-parts osc"))
 	(lib (name "#pwr")(type "KiCad")(uri "${KIPRJMOD}/base/lib/pwr.kicad_sym")(options "")(descr "kicad-parts pwr"))
 	(lib (name "#res")(type "KiCad")(uri "${KIPRJMOD}/base/lib/res.kicad_sym")(options "")(descr "kicad-parts res"))
 )
