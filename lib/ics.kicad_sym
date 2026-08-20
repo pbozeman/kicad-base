@@ -1748,7 +1748,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_BGA:Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm"
+		(property "Footprint" "mem:MT41K128M16JT-125-K"
 			(at 31.75 -94.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3775,7 +3775,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_BGA:Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm"
+		(property "Footprint" "mem:MT41K128M16JT-125-K"
 			(at 31.75 -94.92 0)
 			(show_name no)
 			(do_not_autoplace no)

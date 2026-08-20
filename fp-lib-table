@@ -1,5 +1,6 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "conn")(type "KiCad")(uri "${KIPRJMOD}/base/footprints/conn.pretty")(options "")(descr "kicad-parts conn"))
+	(lib (name "mem")(type "KiCad")(uri "${KIPRJMOD}/base/footprints/mem.pretty")(options "")(descr "kicad-parts mem"))
 	(lib (name "xilinx")(type "KiCad")(uri "${KIPRJMOD}/base/footprints/xilinx.pretty")(options "")(descr "kicad-parts xilinx"))
 )
