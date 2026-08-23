@@ -117,6 +117,101 @@ than trusting these blindly.
     - F/B: 4.69mil width, 8mil spacing
     - Inner: 4.05mil width, 8 mil spacing
 
+#### Propagation delay tuning
+
+Soldermask impedance values: <https://jlcpcb.com/impedance>
+
+##### Microstrip single-ended
+
+Calculator: <https://impedance.app.protoexpress.com/?appid=CTSEIMPCAL>
+
+| Sierra field | Enter    |
+| ------------ | -------: |
+| H1           | 3.91 mil |
+| ER1          |      4.1 |
+| H1C          |  1.2 mil |
+| H2C          |  0.6 mil |
+| ER2          |      3.8 |
+| W            | 5.94 mil |
+| ΔW           |  0.7 mil |
+| T            |  1.6 mil |
+
+| Quantity             | Result       |
+| -------------------- | -----------: |
+| Calculated impedance |      50.97 Ω |
+| Uncoated impedance   |      54.42 Ω |
+| Effective εr         |       3.2709 |
+| Propagation delay    | 153.23 ps/in |
+| Inductance           |  7.810 nH/in |
+| Capacitance          |  3.006 pF/in |
+
+##### Microstrip differential
+
+Calculator: <https://impedance.app.protoexpress.com/?appid=CTDPIMPCAL>
+
+| Sierra field | Enter    |
+| ------------ | -------: |
+| H1           | 3.91 mil |
+| ER1          |      4.1 |
+| H1C          |  1.2 mil |
+| H2C          |  0.6 mil |
+| ER2          |      3.8 |
+| W            | 3.51 mil |
+| S            |  4.7 mil |
+| ΔW           |  0.7 mil |
+| T            |  1.6 mil |
+
+| Quantity                       | Result       | Notes                           |
+| ------------------------------ | -----------: | ------------------------------- |
+| Differential impedance (Zd)    |     101.52 Ω | Good match to 100 Ω target      |
+| Odd-mode impedance             |      50.76 Ω | Zd ≈ 2 × Zodd                   |
+| Odd-mode propagation delay     | 146.20 ps/in | Use for differential signals    |
+| Even-mode propagation delay    | 155.52 ps/in | Common-mode propagation         |
+| Coupling coefficient           |        19.2% | Pair coupling                   |
+
+##### Stripline single-ended
+
+Calculator: <https://impedance.app.protoexpress.com/?appid=SLSEIMPCAL>
+
+| Sierra field | Enter     |
+| ------------ | --------: |
+| H1           | 14.05 mil |
+| ER1          |      4.16 |
+| H2           |  3.94 mil |
+| ER2          |       4.6 |
+| W            |  4.75 mil |
+| ΔW           |   0.7 mil |
+| T            |   0.6 mil |
+
+| Quantity             | Result       |
+| -------------------- | -----------: |
+| Calculated impedance |      49.95 Ω |
+| Effective εr         |       4.4521 |
+| Propagation delay    | 178.77 ps/in |
+
+##### Stripline differential
+
+Calculator: <https://impedance.app.protoexpress.com/?appid=SLDPIMPCAL>
+
+| Sierra field | Enter     |
+| ------------ | --------: |
+| H1           | 14.05 mil |
+| ER1          |      4.16 |
+| H2           |  3.94 mil |
+| ER2          |       4.6 |
+| W            |  3.55 mil |
+| S            |   5.8 mil |
+| ΔW           |   0.7 mil |
+| T            |   0.6 mil |
+
+| Quantity                    | Result       | Notes                        |
+| --------------------------- | -----------: | ---------------------------- |
+| Differential impedance      |      99.77 Ω | Good match to 100 Ω target   |
+| Odd-mode impedance          |      49.88 Ω |                              |
+| Odd-mode propagation delay  | 178.30 ps/in | Use for differential signals |
+| Even-mode propagation delay | 179.04 ps/in | Common-mode propagation      |
+| Coupling coefficient        |       11.91% | Pair coupling                |
+
 ## PCB manufacturing checklist
 
 - To keep costs at $2 (6-layer, 5 pcs), stay within these parameters
