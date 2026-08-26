@@ -125,7 +125,7 @@ Soldermask impedance values: <https://jlcpcb.com/impedance>
 
 Calculator: <https://impedance.app.protoexpress.com/?appid=CTSEIMPCAL>
 
-| Sierra field | Enter    |
+| Sierra field |    Enter |
 | ------------ | -------: |
 | H1           | 3.91 mil |
 | ER1          |      4.1 |
@@ -136,7 +136,7 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=CTSEIMPCAL>
 | ΔW           |  0.7 mil |
 | T            |  1.6 mil |
 
-| Quantity             | Result       |
+| Quantity             |       Result |
 | -------------------- | -----------: |
 | Calculated impedance |      50.97 Ω |
 | Uncoated impedance   |      54.42 Ω |
@@ -149,7 +149,7 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=CTSEIMPCAL>
 
 Calculator: <https://impedance.app.protoexpress.com/?appid=CTDPIMPCAL>
 
-| Sierra field | Enter    |
+| Sierra field |    Enter |
 | ------------ | -------: |
 | H1           | 3.91 mil |
 | ER1          |      4.1 |
@@ -161,19 +161,19 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=CTDPIMPCAL>
 | ΔW           |  0.7 mil |
 | T            |  1.6 mil |
 
-| Quantity                       | Result       | Notes                           |
-| ------------------------------ | -----------: | ------------------------------- |
-| Differential impedance (Zd)    |     101.52 Ω | Good match to 100 Ω target      |
-| Odd-mode impedance             |      50.76 Ω | Zd ≈ 2 × Zodd                   |
-| Odd-mode propagation delay     | 146.20 ps/in | Use for differential signals    |
-| Even-mode propagation delay    | 155.52 ps/in | Common-mode propagation         |
-| Coupling coefficient           |        19.2% | Pair coupling                   |
+| Quantity                    |       Result | Notes                        |
+| --------------------------- | -----------: | ---------------------------- |
+| Differential impedance (Zd) |     101.52 Ω | Good match to 100 Ω target   |
+| Odd-mode impedance          |      50.76 Ω | Zd ≈ 2 × Zodd                |
+| Odd-mode propagation delay  | 146.20 ps/in | Use for differential signals |
+| Even-mode propagation delay | 155.52 ps/in | Common-mode propagation      |
+| Coupling coefficient        |        19.2% | Pair coupling                |
 
 ##### Stripline single-ended
 
 Calculator: <https://impedance.app.protoexpress.com/?appid=SLSEIMPCAL>
 
-| Sierra field | Enter     |
+| Sierra field |     Enter |
 | ------------ | --------: |
 | H1           | 14.05 mil |
 | ER1          |      4.16 |
@@ -183,7 +183,7 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=SLSEIMPCAL>
 | ΔW           |   0.7 mil |
 | T            |   0.6 mil |
 
-| Quantity             | Result       |
+| Quantity             |       Result |
 | -------------------- | -----------: |
 | Calculated impedance |      49.95 Ω |
 | Effective εr         |       4.4521 |
@@ -193,7 +193,7 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=SLSEIMPCAL>
 
 Calculator: <https://impedance.app.protoexpress.com/?appid=SLDPIMPCAL>
 
-| Sierra field | Enter     |
+| Sierra field |     Enter |
 | ------------ | --------: |
 | H1           | 14.05 mil |
 | ER1          |      4.16 |
@@ -204,7 +204,7 @@ Calculator: <https://impedance.app.protoexpress.com/?appid=SLDPIMPCAL>
 | ΔW           |   0.7 mil |
 | T            |   0.6 mil |
 
-| Quantity                    | Result       | Notes                        |
+| Quantity                    |       Result | Notes                        |
 | --------------------------- | -----------: | ---------------------------- |
 | Differential impedance      |      99.77 Ω | Good match to 100 Ω target   |
 | Odd-mode impedance          |      49.88 Ω |                              |
