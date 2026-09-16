@@ -2,21 +2,20 @@
 	(version 20251024)
 	(generator "kparts")
 	(generator_version "1")
-	(symbol "L_Small"
+	(symbol "FerriteBead_Small"
 		(pin_numbers
 			(hide yes)
 		)
 		(pin_names
-			(offset 0.254)
-			(hide yes)
+			(offset 0)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "L"
-			(at 0.762 1.016 0)
+		(property "Reference" "FB"
+			(at 1.905 1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26,8 +25,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "L_Small"
-			(at 0.762 -1.016 0)
+		(property "Value" "FerriteBead_Small"
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38,7 +37,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -59,7 +58,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor, small symbol"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70,7 +69,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "inductor choke coil reactor magnetic"
+		(property "ki_keywords" "L ferrite bead inductor filter"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -81,7 +80,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+		(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -92,11 +91,15 @@
 				)
 			)
 		)
-		(symbol "L_Small_0_1"
-			(arc
-				(start 0 2.032)
-				(mid 0.5058 1.524)
-				(end 0 1.016)
+		(symbol "FerriteBead_Small_0_1"
+			(polyline
+				(pts
+					(xy -1.8288 0.2794)
+					(xy -1.1176 1.4986)
+					(xy 1.8288 -0.2032)
+					(xy 1.1176 -1.4224)
+					(xy -1.8288 0.2794)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -105,10 +108,11 @@
 					(type none)
 				)
 			)
-			(arc
-				(start 0 1.016)
-				(mid 0.5058 0.508)
-				(end 0 0)
+			(polyline
+				(pts
+					(xy 0 0.889)
+					(xy 0 1.2954)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -117,22 +121,11 @@
 					(type none)
 				)
 			)
-			(arc
-				(start 0 0)
-				(mid 0.5058 -0.508)
-				(end 0 -1.016)
-				(stroke
-					(width 0)
-					(type default)
+			(polyline
+				(pts
+					(xy 0 -1.27)
+					(xy 0 -0.7874)
 				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 0 -1.016)
-				(mid 0.5058 -1.524)
-				(end 0 -2.032)
 				(stroke
 					(width 0)
 					(type default)
@@ -142,10 +135,10 @@
 				)
 			)
 		)
-		(symbol "L_Small_1_1"
+		(symbol "FerriteBead_Small_1_1"
 			(pin passive line
 				(at 0 2.54 270)
-				(length 0.508)
+				(length 1.27)
 				(name ""
 					(effects
 						(font
@@ -163,7 +156,7 @@
 			)
 			(pin passive line
 				(at 0 -2.54 90)
-				(length 0.508)
+				(length 1.27)
 				(name ""
 					(effects
 						(font
@@ -681,9 +674,9 @@
 		(embedded_fonts no)
 	)
 	(symbol "CPD-BLM15AX601SN1D"
-		(extends "L_Small")
+		(extends "FerriteBead_Small")
 		(property "Value" "BLM15AX601SN1D"
-			(at 0.762 -1.016 0)
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -694,7 +687,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -783,9 +776,9 @@
 		)
 	)
 	(symbol "CPD-BLM18PG121SN1D"
-		(extends "L_Small")
+		(extends "FerriteBead_Small")
 		(property "Value" "BLM18PG121SN1D"
-			(at 0.762 -1.016 0)
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -796,7 +789,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -885,9 +878,9 @@
 		)
 	)
 	(symbol "CPD-GZ1608D601TF"
-		(extends "L_Small")
+		(extends "FerriteBead_Small")
 		(property "Value" "GZ1608D601TF"
-			(at 0.762 -1.016 0)
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -898,7 +891,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -987,9 +980,9 @@
 		)
 	)
 	(symbol "CPD-GZ2012D101TF"
-		(extends "L_Small")
+		(extends "FerriteBead_Small")
 		(property "Value" "GZ2012D101TF"
-			(at 0.762 -1.016 0)
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1000,7 +993,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1089,9 +1082,9 @@
 		)
 	)
 	(symbol "CPD-GZ2012D601TF"
-		(extends "L_Small")
+		(extends "FerriteBead_Small")
 		(property "Value" "GZ2012D601TF"
-			(at 0.762 -1.016 0)
+			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1102,7 +1095,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 0 0 0)
+			(at -1.778 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
