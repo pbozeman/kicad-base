@@ -675,7 +675,7 @@
 	)
 	(symbol "CPD-BLM15AX601SN1D"
 		(extends "FerriteBead_Small")
-		(property "Value" "BLM15AX601SN1D"
+		(property "Value" "600/500mA"
 			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -719,7 +719,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "circuit-protection JLC:E"
+		(property "ki_keywords" "ferrite bead JLC:E"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -777,7 +777,7 @@
 	)
 	(symbol "CPD-BLM18PG121SN1D"
 		(extends "FerriteBead_Small")
-		(property "Value" "BLM18PG121SN1D"
+		(property "Value" "120/2A"
 			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -821,7 +821,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "circuit-protection JLC:B JLC:F"
+		(property "ki_keywords" "ferrite bead JLC:B JLC:F"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -879,7 +879,7 @@
 	)
 	(symbol "CPD-GZ1608D601TF"
 		(extends "FerriteBead_Small")
-		(property "Value" "GZ1608D601TF"
+		(property "Value" "600/200mA"
 			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -923,7 +923,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "circuit-protection JLC:B JLC:F"
+		(property "ki_keywords" "ferrite bead JLC:B JLC:F"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -981,7 +981,7 @@
 	)
 	(symbol "CPD-GZ2012D101TF"
 		(extends "FerriteBead_Small")
-		(property "Value" "GZ2012D101TF"
+		(property "Value" "100/800mA"
 			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1025,7 +1025,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "circuit-protection JLC:B JLC:F"
+		(property "ki_keywords" "ferrite bead JLC:B JLC:F"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1083,7 +1083,7 @@
 	)
 	(symbol "CPD-GZ2012D601TF"
 		(extends "FerriteBead_Small")
-		(property "Value" "GZ2012D601TF"
+		(property "Value" "600/500mA"
 			(at 1.905 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1127,7 +1127,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "circuit-protection JLC:B JLC:F"
+		(property "ki_keywords" "ferrite bead JLC:B JLC:F"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
